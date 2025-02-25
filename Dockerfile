@@ -21,7 +21,6 @@ COPY . /app
 RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
 USER appuser
 
-LABEL git_commit_haah="${GIT_COMMIT_HASH}"
 LABEL "githash"=$githash
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8090"]
