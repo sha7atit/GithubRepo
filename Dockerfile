@@ -9,8 +9,8 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
 
-aws_access_key_id = AKIAXYZDQCEN4B6JSJQI
-aws_secret_access_key = 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
+ENV aws_access_key_id = AKIAXYZDQCEN4B6JSJQI
+ENV aws_secret_access_key = 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
 
 # Install pip requirements
 COPY requirements.txt .
